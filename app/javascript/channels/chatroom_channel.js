@@ -12,4 +12,4 @@ const initChatroomCable = () => {
     });
   }
 }
-export {initChatroomCable};
+export { initChatroomCable };
