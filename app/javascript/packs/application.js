@@ -6,7 +6,7 @@
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
-require("channels")
+require("channels").start()
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -32,5 +32,5 @@ import { initChatroomCable } from '../channels/chatroom_channel';
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-initChatroomCable()
+  initChatroomCable();
 });
