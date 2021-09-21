@@ -2,17 +2,17 @@ Message.destroy_all
 Chatroom.destroy_all
 User.destroy_all
 
-andy = User.create(email: "andy@gmail.com", password: "488F9MZ)*9QvvP7V26U?3b}vm{j{we7j", nickname: "AndyRama")
+andy = User.create(email: "andy@gmail.com", password: "488F9MZ)*9QvvP7V26U?3b}vm{j{we7j", nickname: "AndyRamaroson")
 recruteur = User.create(email: "recruteur@gmail.com", password: "?d8T97As349*8Cgpj&i8g3cCCs6;Xa", nickname: "Recruteur")
 
-general = Chatroom.create(name: "general")
+general = Chatroom.create(name: "Tech")
 
 Message.create(chatroom: general, user: andy, content: "Hello all")
 Message.create(chatroom: general, user: recruteur, content: "Hello andy")
-Message.create(chatroom: general, user: andy, content: "Action Cable rocks")
-Message.create(chatroom: general, user: recruteur, content: "It seems we have N+1 queries though, let's fix that :ok_hand:")
+Message.create(chatroom: general, user: andy, content: "Did you see a new RPI4 8 go!")
+Message.create(chatroom: general, user: recruteur, content: "Amazing!")
 
-Emploie = Chatroom.create(name: "Emploie")
+Emploie = Chatroom.create(name: "work feedback")
 
 Message.create(chatroom: Emploie, user: andy, content: "Bonjour vous avez etudié ma candidature")
 Message.create(chatroom: Emploie, user: recruteur, content: "oui elle est tres interessante, on pourrait finaliser entretiens")
